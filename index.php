@@ -47,12 +47,13 @@
   <div class="row">
       <div class="col mt-5">
         <?php
+        include("db\config.php");
             switch (@$_REQUEST["page"]){
                 case "pessoas": 
                     include("utilites\Listar_Pessoa.php");
                 break;
                 case "contato": 
-                    include("utilites/Listar_Contato.php");
+                    include("utilites\Listar_Contato.php");
                 break;
             default: 
         print "<h1>Bem Vindo!</h1>";
