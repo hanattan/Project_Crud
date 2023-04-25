@@ -55,6 +55,9 @@
                 case "contato": 
                     include("utilites\Listar_Contato.php");
                 break;
+                case "salvar_pessoa": 
+                  include("utilites\salvar_pessoas.php");
+              break;
             default: 
         print "<h1>Bem Vindo!</h1>";
     }
